@@ -17,3 +17,10 @@ console.log(typeof uname);
 var isHot = true;
 var isRich = false;
 console.log(typeof isHot);
+
+// 12-5 Variable name naming convention and best practice
+var userName = "Hero Alom";
+userName = "Hero Abdul";
+userName = "Hero Jamal";
+userName = "Hero Mosarraf";
+console.log(userName);
