@@ -24,3 +24,10 @@ userName = "Hero Abdul";
 userName = "Hero Jamal";
 userName = "Hero Mosarraf";
 console.log(userName);
+
+// 12-6 Explore string case change index split
+var promise = "I PROMISE I will HARD work to become a programmer ";
+console.log(promise.toLowerCase());
+console.log(promise.toUpperCase());
+console.log(promise.indexOf("HARD"));
+console.log(promise.split(" "));
