@@ -53,3 +53,20 @@ var number8 = 0.2;
 var total = number7 + number8;
 total = total.toFixed(2);
 console.log(total);
+
+// 12-8 Mathematical operations in JavaScript
+var price1 = 25;
+var price2 = 35;
+price2++; // increment of 1
+price2--; // decrement of 2
+var total = price1 + price2; // sum of
+var total = price2 - price1; // sub of
+var total = price1 * price2; // multiple of
+var total = price2 / price1; // divide of
+var total = price2 % price1; // modulas of
+console.log(total);
+
+var name1 = "Mohammad";
+var name2 = "Noman";
+var fullName = name1 + " " + name2;
+console.log(fullName);
