@@ -94,3 +94,7 @@ console.log(randomResult);
 var randomNumber1 = Math.random() * 100;
 var randomResult1 = Math.round(randomNumber1); // random number find round figure
 console.log(randomResult1);
+
+// 12-12 JavaScript Date timezone and Module Summary
+var date = new Date("1996-11-09");
+console.log(date);
