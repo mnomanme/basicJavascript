@@ -70,3 +70,27 @@ var name1 = "Mohammad";
 var name2 = "Noman";
 var fullName = name1 + " " + name2;
 console.log(fullName);
+
+// 12-9 Math absolute round floor ceil random
+var number = -10;
+var absoluteNumber = Math.abs(number); // convert negative to positive
+console.log(absoluteNumber);
+
+var roundNumber = 11.4999;
+var roundResult = Math.round(roundNumber); // round number is making round figure
+console.log(roundResult);
+
+var ceilNumber = 15.4999;
+var ceilResult = Math.ceil(ceilNumber); // ceil number is high
+console.log(ceilResult);
+
+var floorNumber = 20.9999;
+var floorResult = Math.floor(floorNumber); // floor number is down
+console.log(floorResult);
+
+var randomResult = Math.random(); // randomly find number fraction figure
+console.log(randomResult);
+
+var randomNumber1 = Math.random() * 100;
+var randomResult1 = Math.round(randomNumber1); // random number find round figure
+console.log(randomResult1);
