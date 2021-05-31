@@ -26,3 +26,36 @@ if (busFare != 1000) {
 } else {
   console.log("train is better");
 }
+
+// 12-11 Multiple conditions, fulfill both conditions, else if
+
+var getJob = true;
+var savingsAmout = 5000000;
+
+if (getJob == true && savingsAmout > 500000) {
+  // '&&' this sign both statements is true otherwise shows 'no'
+  console.log("Asho patri khuji");
+} else {
+  console.log("Tor biya nai");
+}
+
+var getJob = false;
+var savingsAmout = 50000;
+
+if (getJob == true || savingsAmout > 500000) {
+  // '||' this is one statement is true then it's OK
+  console.log("Asho patri khuji");
+} else {
+  console.log("Tor biya nai");
+}
+
+var getJob = true;
+var savingsAmout = 50000;
+
+if (getJob == true && savingsAmout > 500000) {
+  console.log("Asho patri khuji");
+} else if (getJob == true) {
+  console.log("okay wait some days");
+} else {
+  console.log("Tor biya nai");
+}
