@@ -32,8 +32,8 @@ fruitsPrice.shift();
 console.log(fruitsPrice); // shift() is use remove element in array in the beginning of array list
 
 // 13-4 array add and remove element from the beginning and slice
-var teaLine = ["Kalam", "Salam", "Balam", "Talam", "Palam"];
-teaLine.push("Jalam");
+var teaLine = ['Kalam', 'Salam', 'Balam', 'Talam', 'Palam'];
+teaLine.push('Jalam');
 console.log(teaLine);
 teaLine.pop();
 console.log(teaLine);
@@ -42,12 +42,12 @@ var part = teaLine.slice(1, 4); // 'slice()' is use to cut the value like piece 
 console.log(part);
 console.log(teaLine);
 
-var fuckaLine = ["Naeem", "Montu", "Sezan"];
+var fuckaLine = ['Naeem', 'Montu', 'Sezan'];
 fuckaLine.shift();
 console.log(fuckaLine);
-fuckaLine.unshift("Noman", "Mehe");
+fuckaLine.unshift('Noman', 'Mehe');
 console.log(fuckaLine);
 
-var fuckaPart = fuckaLine.splice(1, 2); // 'splice()' is use to delete element in array list to set by value
-console.log("Splice=>", fuckaPart);
+var fuckaPart = fuckaLine.splice(2, 1); // 'splice()' is use to delete element in array list to set by value
+console.log('Splice =>', fuckaPart);
 console.log(fuckaLine);
