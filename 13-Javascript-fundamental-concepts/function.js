@@ -47,3 +47,5 @@ function add(num1, num2) {
 }
 var sum = add(15, 25);
 console.log(sum);
+
+// 13-10 Comment, multiple lines comment
