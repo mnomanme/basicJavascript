@@ -6,6 +6,7 @@ console.log(feet);
 console.log(feet);
 console.log(feet);
 
+// using function to convert inch to feet
 function inchToFeet(inch) {
 	var feet = inch / 12;
 	return feet;
