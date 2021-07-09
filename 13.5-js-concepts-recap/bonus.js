@@ -4,7 +4,7 @@
 // 13_5-3 Revisit string, array, loop
 var marks = [66, 99, 70, 77, 88, 40, 39];
 
-for (i = 0; i < marks.length; i++) {
+for (var i = 0; i < marks.length; i++) {
 	var elements = marks[i];
 	console.log(elements);
 }
