@@ -22,3 +22,6 @@ function getArrayMarks(marks) {
 var marksExam = [47, 29, 42, 90];
 var total = getArrayMarks(marksExam);
 console.log('Exam marks:', total);
+
+var result = getArrayMarks([122, 32, 45]);
+console.log('Result of sum:', result);
