@@ -1,3 +1,5 @@
+// https://github.com/nomanme/basic-javascript/blob/master/16-assignment/assignment02.js
+
 // problem 01 solve
 
 // kilometerToMeter
@@ -40,3 +42,32 @@ function hotelCost(cost) {
 }
 let totalCost = hotelCost(250);
 console.log('All tour cost =>', totalCost);
+
+// problem 04 solve
+
+// megaFriend
+
+let friendName = [
+	'Mohammad',
+	'Noman',
+	'Faruque',
+	'Naeem',
+	'Zareen',
+	'Sultana',
+	'uyhgihujfdcuiyagbufbu',
+];
+
+function megaFriend(friend) {
+	let large = 0;
+	let largest;
+	for (let i = 0; i < friend.length; i++) {
+		if (friend[i].length > large) {
+			large = friend[i].length;
+			largest = friend[i];
+		}
+	}
+	return largest;
+}
+
+let allFriends = megaFriend(friendName);
+console.log(allFriends);
