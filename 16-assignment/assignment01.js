@@ -58,7 +58,7 @@ function tinyFriend(arr) {
 		if (arr[i].length < small) {
 			small = arr[i].length;
 			smallest = arr[i];
-			console.log('Counting loop = >', i);
+			console.log('Counting loop =>', i);
 		}
 	}
 
