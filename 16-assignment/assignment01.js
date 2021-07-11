@@ -25,3 +25,23 @@ function woodCalculator(chair, table, cot) {
 let price = woodCalculator(2, 3, 4);
 
 console.log('My furniture cost = >', price);
+
+// problem three solve
+
+// brickCalculator
+function brickCalculator(brick) {
+	let building = brick;
+	if (building <= 10) {
+		return building * 15 * 1000;
+	} else if (building <= 20) {
+		return (10 * 15 + (building - 10) * 12) * 1000;
+	} else return (10 * 15 + 10 * 12 + (building - 20) * 10) * 1000;
+}
+
+let tenOutput = brickCalculator(10);
+let twentyOutput = brickCalculator(20);
+let twentyAbove = brickCalculator(26);
+
+console.log('First 1 to 10th floor = >', tenOutput);
+console.log('Second 11 to 20th floor = >', twentyOutput);
+console.log('Third 20th floor above = >', twentyAbove);
