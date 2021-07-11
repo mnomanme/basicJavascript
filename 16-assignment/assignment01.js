@@ -45,3 +45,26 @@ let twentyAbove = brickCalculator(26);
 console.log('First 1 to 10th floor = >', tenOutput);
 console.log('Second 11 to 20th floor = >', twentyOutput);
 console.log('Third 20th floor above = >', twentyAbove);
+
+// Problem four slove
+
+// tinyFriend
+let name = ['Nayeem', 'Noman', 'Hira', 'Sua'];
+
+function tinyFriend(arr) {
+	let small = arr[0].length;
+	let smallest;
+	for (let i = 1; i < arr.length; i++) {
+		if (arr[i].length < small) {
+			small = arr[i].length;
+			smallest = arr[i];
+			console.log('Counting loop = >', i);
+		}
+	}
+
+	return smallest;
+}
+
+let myFriend = tinyFriend(name);
+
+console.log('Show my small friends name = > ', myFriend);
