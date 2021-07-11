@@ -2,6 +2,7 @@
 
 // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 
+// fibonacci iterative method
 function fiboIterative(num) {
 	var fibo = [1, 1];
 	for (let i = 2; i <= num; i++) {
@@ -10,11 +11,11 @@ function fiboIterative(num) {
 	}
 	return fibo;
 }
+
 var newFibo = fiboIterative(10);
 console.log('Iterative =>', newFibo);
 
 // fibonacci recursive method
-
 function fiboRecursive(num) {
 	// stopping condition
 	if (num == 0) {
