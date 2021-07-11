@@ -67,4 +67,4 @@ function tinyFriend(arr) {
 
 let myFriend = tinyFriend(name);
 
-console.log('Show my small friends name = > ', myFriend);
+console.log('Show my small friends name => ', myFriend);
