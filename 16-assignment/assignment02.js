@@ -47,15 +47,7 @@ console.log('All tour cost =>', totalCost);
 
 // megaFriend
 
-let friendName = [
-	'Mohammad',
-	'Noman',
-	'Faruque',
-	'Naeem',
-	'Zareen',
-	'Sultana',
-	'uyhgihujfdcuiyagbufbu',
-];
+let friendName = ['Mohammad', 'Noman', 'Faruque', 'Naeem', 'Zareen', 'Sultana', 'uyhgihujfdcuiyagbufbu'];
 
 function megaFriend(friend) {
 	let large = 0;
