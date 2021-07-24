@@ -4,13 +4,13 @@
 
 // kilometerToMeter
 
-function kilometerToMeter(meter) {
-	let km = meter * 1000; // 1 km = 1000 meter
-	console.log('Check kilometer =>', km);
-	return km;
+function kilometerToMeter(kilometer) {
+	let meter = kilometer * 1000; // 1 km = 1000 meter
+	console.log('Check kilometer =>', meter);
+	return meter;
 }
-let kMeter = kilometerToMeter(18.5);
-console.log('Here KiloMeter is =>', kMeter);
+let totalKilometer = kilometerToMeter(18.5);
+console.log('Here KiloMeter is =>', totalKilometer);
 
 // problem 02 solve
 
