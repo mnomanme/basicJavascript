@@ -40,17 +40,17 @@ console.log('Total Price =>', price);
 
 // hotelCost
 
-function hotelCost(cost) {
-	let day = cost;
-	if (day <= 10) {
-		// console.log('first week cost:', day);
-		return day * 100;
-	} else if (day <= 20) {
-		// console.log('second week cost:', day);
-		return 10 * 100 + (day - 10) * 80;
+function hotelCost(days) {
+	let costs = days;
+	if (costs <= 10) {
+		// console.log('first week cost:', costs);
+		return costs * 100;
+	} else if (costs <= 20) {
+		// console.log('second week cost:', costs);
+		return 10 * 100 + (costs - 10) * 80;
 	} else {
-		// console.log('third week cost:', day);
-		return 10 * 100 + 10 * 80 + (day - 20) * 50;
+		// console.log('third week cost:', costs);
+		return 10 * 100 + 10 * 80 + (costs - 20) * 50;
 	}
 }
 let totalCost = hotelCost(250);
