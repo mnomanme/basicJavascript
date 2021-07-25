@@ -5,6 +5,11 @@
 // kilometerToMeter
 
 function kilometerToMeter(kilometer) {
+	if (kilometer == undefined || kilometer == null) {
+		return 'Please Enter Your Value First';
+	} else if (kilometer < 0) {
+		return 'Distance Value Cannot be Negative';
+	}
 	let meter = kilometer * 1000; // 1 km = 1000 meter
 	console.log('Check kilometer =>', meter);
 	return meter;
