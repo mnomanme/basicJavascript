@@ -11,7 +11,7 @@ function kilometerToMeter(kilometer) {
 		return 'Distance Value Cannot be Negative';
 	}
 	let meter = kilometer * 1000; // 1 km = 1000 meter
-	console.log('Check kilometer =>', meter);
+	// console.log('Check kilometer =>', meter);
 	return meter;
 }
 let totalKilometer = kilometerToMeter(18.5);
@@ -22,7 +22,15 @@ console.log('Here KiloMeter is =>', totalKilometer);
 // budgetCalculator
 
 function budgetCalculator(watch, phone, laptop) {
-	let device = 3 * watch + 2 * phone + 1 * laptop;
+	if (typeof watch != 'number' || watch == undefined || watch == null || watch < 0) {
+		return 'Please Enter Valid Number';
+	} else if (typeof phone != 'number' || phone == undefined || phone == null || phone < 0) {
+		return 'Please Enter Valid Number';
+	} else if (typeof laptop != 'number' || laptop == undefined || laptop == null || laptop < 0) {
+		return 'Please Enter Valid Number';
+	}
+
+	let device = watch * 3 + phone * 2 + laptop * 1;
 	return device;
 }
 let price = budgetCalculator(50, 100, 500);
@@ -67,4 +75,4 @@ function megaFriend(friend) {
 }
 
 let allFriends = megaFriend(friendName);
-console.log(allFriends);
+console.log('My Largest Friend Name =>', allFriends);
