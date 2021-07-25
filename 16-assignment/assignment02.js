@@ -5,8 +5,8 @@
 // kilometerToMeter
 
 function kilometerToMeter(kilometer) {
-	if (kilometer == undefined || kilometer == null) {
-		return 'Please Enter Your Value First';
+	if (typeof kilometer != 'number' || kilometer == undefined || kilometer == null) {
+		return 'Please Enter Your Valid Value';
 	} else if (kilometer < 0) {
 		return 'Distance Value Cannot be Negative';
 	}
