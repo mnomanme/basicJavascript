@@ -23,4 +23,4 @@ function numFactorial(n) {
 }
 
 var result = numFactorial(10);
-console.log(result);
+console.log('Factorial result =>', result);
