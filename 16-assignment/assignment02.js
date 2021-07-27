@@ -42,7 +42,7 @@ console.log('Total Price =>', price);
 
 function hotelCost(days) {
 	let costs = days;
-	if (costs < 0 || costs % 1 !== 0 || costs === 0) {
+	if (costs < 0 || costs % 1 !== 0 || costs === 0 || typeof costs === 'boolean') {
 		return 'Please! Insert Valid Number';
 	} else if (costs <= 10) {
 		console.log('first week stay:', costs, 'days');
@@ -65,15 +65,20 @@ console.log('All tour cost =>', totalCost);
 let friendName = ['Mohammad', 'Noman', 'Faruque', 'Naeem', 'Zareen', 'Sultana', 'uyhgihujfdcuiyagbufbu'];
 
 function megaFriend(friend) {
-	let large = 0;
+	let large = [0];
 	let largest;
-	for (let i = 0; i < friend.length; i++) {
-		if (friend[i].length > large) {
-			large = friend[i].length;
-			largest = friend[i];
+
+	if (friend.length === 0 || typeof friend === 'number' || typeof friend === 'boolean') {
+		return 'Please Enter Your Friend Name';
+	} else {
+		for (let i = 0; i < friend.length; i++) {
+			if (friend[i].length > large) {
+				large = friend[i].length;
+				largest = friend[i];
+			}
 		}
+		return largest;
 	}
-	return largest;
 }
 
 let allFriends = megaFriend(friendName);
