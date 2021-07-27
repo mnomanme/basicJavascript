@@ -42,7 +42,7 @@ console.log('Total Price =>', price);
 
 function hotelCost(days) {
 	let costs = days;
-	if (costs < 0 || costs % 1 !== 0) {
+	if (costs < 0 || costs % 1 !== 0 || costs === 0) {
 		return 'Please! Insert Valid Number';
 	} else if (costs <= 10) {
 		console.log('first week stay:', costs, 'days');
@@ -55,7 +55,7 @@ function hotelCost(days) {
 		return 10 * 100 + 10 * 80 + (costs - 20) * 50;
 	}
 }
-let totalCost = hotelCost();
+let totalCost = hotelCost(21);
 console.log('All tour cost =>', totalCost);
 
 // problem 04 solve
