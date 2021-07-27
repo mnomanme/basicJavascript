@@ -5,7 +5,7 @@
 // kilometerToMeter
 
 function kilometerToMeter(kilometer) {
-	if (typeof kilometer != 'number' || kilometer == undefined || kilometer == null) {
+	if (typeof kilometer !== 'number' || kilometer === undefined || kilometer === null) {
 		return 'Please Enter Your Valid Value';
 	} else if (kilometer < 0) {
 		return 'Distance Value Cannot be Negative';
@@ -22,11 +22,11 @@ console.log('Here KiloMeter is =>', totalKilometer);
 // budgetCalculator
 
 function budgetCalculator(watch, phone, laptop) {
-	if (typeof watch != 'number' || watch == undefined || watch == null || watch < 0) {
+	if (typeof watch !== 'number' || watch === undefined || watch === null || watch < 0) {
 		return 'Please Enter Valid Number';
-	} else if (typeof phone != 'number' || phone == undefined || phone == null || phone < 0) {
+	} else if (typeof phone !== 'number' || phone === undefined || phone === null || phone < 0) {
 		return 'Please Enter Valid Number';
-	} else if (typeof laptop != 'number' || laptop == undefined || laptop == null || laptop < 0) {
+	} else if (typeof laptop !== 'number' || laptop === undefined || laptop === null || laptop < 0) {
 		return 'Please Enter Valid Number';
 	}
 
@@ -42,18 +42,20 @@ console.log('Total Price =>', price);
 
 function hotelCost(days) {
 	let costs = days;
-	if (costs <= 10) {
-		// console.log('first week cost:', costs);
+	if (costs < 0 || costs % 1 !== 0) {
+		return 'Please! Insert Valid Number';
+	} else if (costs <= 10) {
+		console.log('first week stay:', costs, 'days');
 		return costs * 100;
 	} else if (costs <= 20) {
-		// console.log('second week cost:', costs);
+		console.log('second week stay:', costs, 'days');
 		return 10 * 100 + (costs - 10) * 80;
 	} else {
-		// console.log('third week cost:', costs);
+		console.log('third week stay:', costs, 'days');
 		return 10 * 100 + 10 * 80 + (costs - 20) * 50;
 	}
 }
-let totalCost = hotelCost(250);
+let totalCost = hotelCost();
 console.log('All tour cost =>', totalCost);
 
 // problem 04 solve
