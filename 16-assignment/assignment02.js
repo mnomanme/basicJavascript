@@ -27,11 +27,19 @@ function budgetCalculator(watch, phone, laptop) {
 		return 'Please Enter Valid Number';
 	}
 
-	let device = watch * 3 + phone * 2 + laptop * 1;
-	return device;
+	let watchPrice = 50;
+	let phonePrice = 100;
+	let laptopPrice = 500;
+
+	let watchQuantity = watchPrice * watch;
+	let phoneQunatity = phonePrice * phone;
+	let laptopQuantity = laptopPrice * laptop;
+
+	let TotalDeviceCost = watchQuantity + phoneQunatity + laptopQuantity;
+	return TotalDeviceCost;
 }
 
-let price = budgetCalculator(50, 100, 500);
+let price = budgetCalculator(3, 2, 1);
 console.log('Total Price =>', price);
 
 // problem 03 solve
